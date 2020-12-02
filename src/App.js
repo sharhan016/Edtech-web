@@ -19,7 +19,7 @@ class App extends Component {
 
   render() {
     function SecuredRoute(props) {
-      console.log('props in App.js',props);
+      console.log('The props in App.js: ',props);
       return(
         <Route path={props.path} render={ data =>  props.auth.isAuthenticated ?
           (<props.component {...data}></props.component>):
